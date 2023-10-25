@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import DateComponent from './components/DateComponent'
+import ChildComponent from './components/ChildComponent'
+import CoffeesComponent from './components/CoffeesComponent'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// all javascript world
+
+	// in return only jsx lives
+	return (
+		<div className='App'>
+			<header className='App-header'>
+				<CoffeesComponent />
+				<ChildComponent />
+				<DateComponent />
+			</header>
+		</div>
+	)
 }
 
-export default App;
+export default App
